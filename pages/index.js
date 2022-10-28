@@ -31,7 +31,7 @@ export default function Home() {
         <li>columnIds: { setupData ? (setupData.columnIds?.join(', ')) : (<span>Loading</span>) }</li>
         <li>id: { setupData ? (setupData.id) : (<span>Loading</span>) }</li>
         <li>messageType: { setupData ? (setupData.messageType) : (<span>Loading</span>) }</li>
-        <li>store: { setupData ? (setupData.stores) : (<span>Loading</span>) }</li>
+        <li>store: { setupData ? (setupData.store) : (<span>Loading</span>) }</li>
       </ul>
 
       <p>You can use then the columnIds to pull any info about the item (e.g. email address, Stripe ID, etc.) to use in your plugin.</p>
