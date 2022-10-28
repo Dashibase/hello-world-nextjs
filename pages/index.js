@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const [setupData, setSetupData] = useState()
@@ -22,20 +23,19 @@ export default function Home() {
   }, [])
 
   return (
-    <>
+    <div className={styles.container}>
       <h1>Hello World!</h1>
-      <p>This is a simple plugin example to show you what you could do with your plugin</p>
 
       <p>After you enter your plugin URL, you will receive the following setup data from Dashibase to use in your plugin:</p>
       <ul>
-        <li>columnIds: { setupData ? (setupData.columnIds) : (<span>Loading</span>) }</li>
-        <li>foreignColumnIds: { setupData ? (setupData.foreignColumnIds) : (<span>Loading</span>) }</li>
+        <li>columnIds: { setupData ? (setupData.columnIds?.join(', ')) : (<span>Loading</span>) }</li>
         <li>id: { setupData ? (setupData.id) : (<span>Loading</span>) }</li>
         <li>messageType: { setupData ? (setupData.messageType) : (<span>Loading</span>) }</li>
         <li>store: { setupData ? (setupData.stores) : (<span>Loading</span>) }</li>
       </ul>
 
-      <p>You can use the columnIds to pull any info about the item (e.g. email address, Stripe ID, etc.) to use in your plugin.</p>
-    </>
+      <p>You can use then the columnIds to pull any info about the item (e.g. email address, Stripe ID, etc.) to use in your plugin.</p>
+      <p>If you have any questions, check out <a href="https://dashibase.com/docs">our documentation and guide</a> or email us at sk@dashibase.com.</p>
+    </div>
   )
 }
