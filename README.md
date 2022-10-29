@@ -33,7 +33,7 @@ Go back to your dashboard in Dashibase. While viewing any of the items on a tabl
 
 You should see the Hello World app, which tells you the setup data that Dashibase sent to the plugin. 
 
-When you are developing your plugin, you could use the setup data to select which data you want to use in your plugin. For example, say, you have a table of customers, you could pull the email field of each customer via the `email` column and use it in your plugin. See [our Stripe plugin](https://github.com/Dashibase/dashibase-stripe-customer-plugin) for a concrete example.
+When you are developing your plugin, you could use the setup data to select which data you want to use in your plugin. Let's say you have a table of customers, you could pull the email field of each customer via the `email` column and use it in your plugin. See [our Stripe plugin](https://github.com/Dashibase/dashibase-stripe-customer-plugin) for a concrete example.
 
 If you have any questions, feel free to reach us via Twitter ([@dashibase](https://twitter.com/dashibase)) or sk@dashibase.com.
 
