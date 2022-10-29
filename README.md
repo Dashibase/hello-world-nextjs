@@ -1,34 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hello World plugin using NextJS
+
+![Hello World plugin block](/public/hello-world-plugin-block.png)
+
+[Dashibase](https://dashibase.com/) lets you build internal admin dashboards using a Notion-like UI. You can extend the functionality of your dashboards by adding your code via a plugin, such as displaying each customer's Stripe information, showing support tickets from Zendesk, sending emails via SendGrid, and more.
+
+This is a simple Hello World example plugin to show you:
+
+1. What data you can receive from Dashibase to use in your plugin
+2. How to create a simple plugin with NextJS
 
 ## Getting Started
 
-First, run the development server:
+**1. Set up a dashboard in Dashibase** 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+You can skip this step if you already have a dashboard in Dashibase. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If not, you can sign up for free [here](https://dashibase.com/). After you have created a dashboard and added a table from your database, click into any of the items on your table. Here is where we will add the plugin.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+**2. Clone and deploy this repo**
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/nuxtjs&template=nuxtjs)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Clone this repo and deploy it by clicking on the Deploy button in *your* repo.
+
+Our Hello World plugin is now ready.
+
+**3. Add plugin to your dashboard**
+
+Go back to your dashboard in Dashibase. While viewing any of the items on a table, add a Plugin block by typing '/plugin'. Then, add the URL of your deployed plugin and click "Set up".
+
+You should see the Hello World app, which tells you the setup data that Dashibase sent to the plugin. 
+
+When you are developing your plugin, you could use the setup data to select which data you want to use in your plugin. For example, say, you have a table of customers, you could pull the email field of each customer via the `email` column and use it in your plugin. See [our Stripe plugin](https://github.com/Dashibase/dashibase-stripe-customer-plugin) for a concrete example.
+
+If you have any questions, feel free to reach us via Twitter ([@dashibase](https://twitter.com/dashibase)) or sk@dashibase.com.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+You might find the following resources helpful:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Hello World NextJS plugin tutorial](https://dashibase.com/docs/hello-world-nextjs-plugin/)
+- [Plugin API reference](https://dashibase.com/docs/plugin-api-reference)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
