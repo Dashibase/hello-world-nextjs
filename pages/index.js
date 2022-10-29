@@ -11,7 +11,7 @@ export default function Home() {
     client.onSetup((data) => {
       // Prints a log when a SETUP message is received  
       console.log(`Received SETUP message ${JSON.stringify(data)}`)
-      setSetupData(setupData => ({...data}))
+      setSetupData(data)
     })
     
     // Inform Dashibase that plugin is ready to be setup
