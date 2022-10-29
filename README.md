@@ -4,7 +4,7 @@
 
 [Dashibase](https://dashibase.com/) lets you build internal admin dashboards using a Notion-like UI. 
 
-You can extend the functionality of your dashboards by adding your code via a plugin, such as displaying each customer's Stripe information, showing support tickets from Zendesk, sending emails via SendGrid, and more.
+You can extend the functionality of your dashboards by developing a plugin. For example, you could display each customer's Stripe information, show support tickets from Zendesk, send emails via SendGrid, and more.
 
 This is a simple Hello World example plugin to show you:
 
