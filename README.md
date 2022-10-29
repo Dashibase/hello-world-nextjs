@@ -1,4 +1,4 @@
-# Hello World plugin using NextJS
+# Hello World plugin using Next.js
 
 ![Hello World plugin block](/public/hello-world-plugin-block.png)
 
@@ -9,7 +9,7 @@ You can extend the functionality of your dashboards by developing a plugin. For 
 This is a simple Hello World example plugin to show you:
 
 - What data you can receive from Dashibase to use in your plugin
-- How to create a simple plugin with NextJS
+- How to create a simple plugin with Next.js
 
 ## Getting Started
 
@@ -41,6 +41,6 @@ If you have any questions, feel free to reach us via Twitter ([@dashibase](https
 
 You might find the following resources helpful:
 
-- [Hello World NextJS plugin tutorial](https://dashibase.com/docs/hello-world-nextjs-plugin/)
+- [Hello World Next.js plugin tutorial](https://dashibase.com/docs/hello-world-nextjs-plugin/)
 - [Plugin API reference](https://dashibase.com/docs/plugin-api-reference)
 
