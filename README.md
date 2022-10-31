@@ -42,5 +42,5 @@ If you have any questions, feel free to reach us via Twitter ([@dashibase](https
 You might find the following resources helpful:
 
 - [Hello World Next.js plugin tutorial](https://dashibase.com/docs/hello-world-nextjs-plugin/)
-- [Plugin API reference](https://dashibase.com/docs/plugin-api-reference)
+- [Plugin API reference](https://dashibase.com/docs/plugin-api/)
 
